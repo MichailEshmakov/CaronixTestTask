@@ -25,10 +25,7 @@ public class HealthBar : MonoBehaviour
 
     private void Fit()
     {
-        Debug.Log(_health.Value);
-        Debug.Log(_health.StartValue);
         float value = _health.Value / (float)_health.StartValue;
-        Debug.Log(value);
         _slider.value = value;
     }
 

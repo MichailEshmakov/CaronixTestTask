@@ -12,7 +12,7 @@ public class Wallet : MonoBehaviour
     public void Add(int delta)
     {
         // TODO: don't allow to reduce with this method
-        PlayerPrefs.SetInt(MoneyKey, delta);
+        PlayerPrefs.SetInt(MoneyKey, GetMoney() + delta);
         MoneyChanged?.Invoke();
     }
 
